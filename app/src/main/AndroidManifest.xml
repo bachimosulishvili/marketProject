@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.market">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +14,6 @@
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".IphoneActivity" />
         <activity android:name=".MacbookActivity" />
-        <activity android:name=".HpLaptopActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".LogInActivity" />
         <activity android:name=".MainActivity">
