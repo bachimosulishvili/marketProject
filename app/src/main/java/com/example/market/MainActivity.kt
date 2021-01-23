@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         onStart()
         signOut()
     }
+
     private fun logIn(){
         val intent0 = Intent(this, LogInActivity::class.java)
         mainActivityLoginButton.setOnClickListener() {
@@ -33,7 +34,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun firstAd(){
         val intent1 = Intent(this, MacbookActivity::class.java)
-
         mainActivityFirstAdButton.setOnClickListener() {
          startActivity(intent1)
      }
@@ -55,30 +55,23 @@ class MainActivity : AppCompatActivity() {
 
     private fun profile(){
         val intent3 = Intent(this, MyProfileActivity::class.java)
-
         mainActivityProfileButton.setOnClickListener(){
             startActivity(intent3)
         }
     }
 
     private fun signOut() {
-
         mainActivityLogoutButton.setOnClickListener(){
             Firebase.auth.signOut()
             mainActivityLogoutButton.visibility = View.GONE
             mainActivityProfileButton.visibility = View.GONE
             mainActivityLoginButton.visibility = View.VISIBLE
         }
-
     }
-
-
 
     public override fun onStart() {
         super.onStart()
         auth = Firebase.auth
-
-        // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         if(currentUser != null){
             mainActivityProfileButton.visibility = View.VISIBLE
@@ -86,5 +79,4 @@ class MainActivity : AppCompatActivity() {
             mainActivityLogoutButton.visibility = View.VISIBLE;
         }
     }
-
 }

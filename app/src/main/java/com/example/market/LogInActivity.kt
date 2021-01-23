@@ -39,33 +39,23 @@ class LogInActivity : AppCompatActivity() {
     private fun logIn() {
         logInLayoutLogInButton.setOnClickListener() {
             auth = Firebase.auth
-
             val email = logInLayoutEmailEditText.text.toString()
             val password = logInLayoutPasswordEditText.text.toString()
-
             if (email.isNotEmpty() && password.isNotEmpty()) {
-
                 auth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
-                                // Sign in success, update UI with the signed-in user's information
                                 Log.d("TAG", "signInWithEmail:success")
                                 val user = auth.currentUser
                                 updateUI()
                             } else {
-                                // If sign in fails, display a message to the user.
                                 Log.w("TAG", "signInWithEmail:failure", task.exception)
                                 Toast.makeText(baseContext, "Authentication failed.",
                                         Toast.LENGTH_SHORT).show()
-                                // ...
                             }
-
-                            // ...
                         }
             }
-
         }
-
     }
 
     private fun updateUI() {
