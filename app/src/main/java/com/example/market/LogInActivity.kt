@@ -72,9 +72,5 @@ class LogInActivity : AppCompatActivity() {
         val intent1 = Intent(this, MainActivity::class.java)
         intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent1)
-
-
-        mainActivityProfileButton.visibility = View.VISIBLE
-        mainActivityLoginButton.isGone = true
     }
 }

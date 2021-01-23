@@ -23,7 +23,7 @@
             android:backgroundTint="@color/secondaryColor"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:visibility="gone"/>
+            android:visibility="invisible"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,6 +44,20 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:text="login"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="10dp"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/mainActivityLogoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondaryColor"
+            android:text="log out"
+            android:visibility="gone"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
