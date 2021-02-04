@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Market">
-        <activity android:name=".profile.ProfileSecondAd"></activity>
+        <activity android:name=".Messages"></activity>
+        <activity android:name=".Contact" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".profile.ProfileSecondAd" />
         <activity android:name=".profile.ProfileFirstAd" />
         <activity android:name=".gaming.GamingSecondAd" />
         <activity android:name=".gaming.GamingFirstAd" />

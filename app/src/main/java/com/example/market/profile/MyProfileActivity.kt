@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
+import com.example.market.Messages
 import com.example.market.R
 import kotlinx.android.synthetic.main.activity_my_profile.*
 
@@ -17,6 +18,7 @@ class MyProfileActivity : AppCompatActivity() {
     private fun init(){
         firstAd()
         secondAd()
+        messages()
 
         Glide.with(this)
             .load("https://www.compuworx.co.za/wp-content//uploads/2019/04/hp-nb-250-g7-pic2.jpg")
@@ -37,8 +39,11 @@ class MyProfileActivity : AppCompatActivity() {
         profileSecondImageButton.setOnClickListener(){
             startActivity(Intent(this, ProfileSecondAd::class.java))
         }
-
-
     }
 
+    private fun messages(){
+        profileMessagesButton.setOnClickListener(){
+            startActivity(Intent(this, Messages::class.java))
+        }
+    }
 }

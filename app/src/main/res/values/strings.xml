@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Market</string>
+    <string name="about_us">
+        Developers of Market Application are Bachana (Bachi) Mosulishvili and Nick Kapanadze.
+        The application is simple prototype of an online store, where everyone can
+        buy and sell technic, musical instruments and so on.
+        You can use Market feedback about application issues and write us in "Contact" section.*
+    </string>
+    <string name="about_us_2">
+        *You must be logged in to contact us.
+    </string>
+    <string name="contact_warning1">You are now trying to contact the developers of our team.</string>
+    <string name="contact_warning2">Read warning below carefully before sending feedback.</string>
+    <string name="contact_warning3"> </string>
+    <string name="contact_warning4">* Please be confident and wait for our reply after messaging us.</string>
+    <string name="contact_warning5">* Please specify the reason of your contact in subject obviously.</string>
+    <string name="contact_warning6">* Please do not use swearing words and do not insult us.</string>
+    <string name="contact_warning7">* Please check your mail below and then write a message:</string>
+
 </resources>

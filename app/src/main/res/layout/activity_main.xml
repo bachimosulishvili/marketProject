@@ -72,6 +72,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="0.7"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical">
@@ -140,5 +141,35 @@
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/aboutUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:backgroundTint="@android:color/transparent"
+            android:height="60dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_weight="0.5"/>
+
+            <Button
+                android:id="@+id/contactButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:height="60dp"
+                android:visibility="gone"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Contact"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

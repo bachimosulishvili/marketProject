@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         profile()
         onStart()
         signOut()
+        aboutUs()
+        contact()
         technics()
         music()
         phones()
@@ -81,18 +83,16 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun logIn(){
-        val intent0 = Intent(this, LogInActivity::class.java)
         mainActivityLoginButton.setOnClickListener() {
-            startActivity(intent0)
+            startActivity(Intent(this, LogInActivity::class.java))
         }
     }
 
 
 
     private fun profile(){
-        val intent3 = Intent(this, MyProfileActivity::class.java)
         mainActivityProfileButton.setOnClickListener(){
-            startActivity(intent3)
+            startActivity(Intent(this, MyProfileActivity::class.java))
         }
     }
 
@@ -102,6 +102,20 @@ class MainActivity : AppCompatActivity() {
             mainActivityLogoutButton.visibility = View.GONE
             mainActivityProfileButton.visibility = View.GONE
             mainActivityLoginButton.visibility = View.VISIBLE
+            contactButton.visibility = View.GONE
+        }
+    }
+
+    private fun aboutUs(){
+        aboutUsButton.setOnClickListener(){
+            startActivity(Intent(this, AboutUs::class.java))
+        }
+    }
+
+    private fun contact(){
+
+        contactButton.setOnClickListener(){
+            startActivity(Intent(this, Contact::class.java))
         }
     }
 
@@ -113,6 +127,7 @@ class MainActivity : AppCompatActivity() {
             mainActivityProfileButton.visibility = View.VISIBLE
             mainActivityLoginButton.visibility = View.GONE
             mainActivityLogoutButton.visibility = View.VISIBLE;
+            contactButton.visibility = View.VISIBLE
         }
     }
 }

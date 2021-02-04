@@ -14,10 +14,14 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_log_in.*
 import kotlinx.android.synthetic.main.activity_main.*
+import android.content.SharedPreferences as SharedPreferences
 
 private lateinit var auth: FirebaseAuth
 
 class LogInActivity : AppCompatActivity() {
+
+    lateinit var sharedPreferences: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
@@ -25,23 +29,29 @@ class LogInActivity : AppCompatActivity() {
         }
 
     private fun init() {
+        sharedPreferences = getSharedPreferences("data", MODE_PRIVATE)
         register()
         logIn()
     }
 
     private fun register() {
         val intent0 = Intent(this, RegisterActivity::class.java)
-        logInLayoutRegisterButton.setOnClickListener() {
+        logInLayoutRegisterButton.setOnClickListener {
             startActivity(intent0)
         }
     }
 
     private fun logIn() {
-        logInLayoutLogInButton.setOnClickListener() {
+        logInLayoutLogInButton.setOnClickListener {
             auth = Firebase.auth
             val email = logInLayoutEmailEditText.text.toString()
             val password = logInLayoutPasswordEditText.text.toString()
             if (email.isNotEmpty() && password.isNotEmpty()) {
+
+                val editor = sharedPreferences.edit()
+                editor.putString("email", email)
+                editor.apply()
+
                 auth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
