@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MacbookActivity">
+    android:background="@color/backgroundColor"
+    tools:context=".phones.PhonesFirstAd">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -15,10 +16,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="macbook pro 2020"
+            android:text="Bicycle Trinx"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="40sp"
+            android:textSize="35sp"
             android:textStyle="bold"
             android:gravity="center"/>
 
@@ -33,14 +34,15 @@
         android:layout_marginEnd="15dp">
 
         <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/first_advertisement_thumbnail"/>
+            android:id="@+id/othersFirstAdThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2020 Macbook Pro"
+            android:text="Bicycle Trinx"
+            android:textColor="@color/secondaryColor"
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -53,7 +55,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5600 GEL"
+                android:text="600 GEL"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/holo_red_dark"
@@ -68,7 +70,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="Full Name"
+                    android:text="Brand"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -78,7 +81,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -86,40 +89,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="Apple Macbook Pro"
-                    android:textSize="20sp"
-                    android:gravity="center"
-                    />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:text="CPU"
-                    android:textSize="25sp"
-                    android:gravity="center"
-                    />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.01"
-                    android:textSize="30sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:text=":"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:text="Apple M1"
+                    android:text="Trinx"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -134,7 +105,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="RAM"
+                    android:text="Size"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -144,7 +116,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -152,7 +124,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="16 GB"
+                    android:text='27"'
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -167,7 +140,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="SSD"
+                    android:text="Speed"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -177,7 +151,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -185,7 +159,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="516 GB"
+                    android:text="3x8"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -200,7 +175,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="GPU"
+                    android:text="Frame Material"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -210,7 +186,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -218,8 +194,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="Integrated"
-                    android:textColor="@android:color/holo_red_dark"
+                    android:text="Aluminum"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -234,7 +210,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="Screen Size"
+                    android:text="Type"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -244,7 +221,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -252,7 +229,43 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text='15.6"'
+                    android:text="MTB"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Foldable"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:textSize="30sp"
+                    android:textColor="@color/secondaryColor"
+                    android:textStyle="bold"
+                    android:text=":"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="-"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -262,7 +275,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Call: 598 *** ***"
+                android:text="Call: 597 *** ***"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/holo_red_dark"
@@ -270,7 +283,5 @@
                 android:layout_marginTop="15dp"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.appcompat.widget.LinearLayoutCompat>

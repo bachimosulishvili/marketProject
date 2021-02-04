@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,9 +22,10 @@
             android:layout_height="wrap_content"
             android:text="Profile"
             android:backgroundTint="@color/secondaryColor"
+            android:textColor="@color/backgroundColor"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:visibility="invisible"/>
+            android:visibility="gone"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,9 +44,9 @@
             android:id="@+id/mainActivityLoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:text="login"
-            android:textColor="@color/black"
+            android:backgroundTint="@color/secondaryColor"
+            android:text="log in"
+            android:textColor="@color/backgroundColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -58,89 +60,84 @@
             android:backgroundTint="@color/secondaryColor"
             android:text="log out"
             android:visibility="gone"
-            android:textColor="@color/black"
+            android:textColor="@color/backgroundColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="10dp"
             tools:ignore="RtlCompat" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latest Advertisements"
-        android:textSize="25sp"
-        android:layout_marginStart="10dp"
-        tools:ignore="RtlCompat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp">
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="categories"
+            android:textAllCaps="true"
+            android:textSize="45sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/secondaryColor"/>
 
-            <ImageButton
-                android:id="@+id/mainActivityFirstAdImageButton"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/first_advertisement_thumbnail"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Macbook Pro 2020"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:gravity="center"/>
-
-            <Button
-                android:id="@+id/mainActivityFirstAdButton"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/secondaryColor"
-                android:text="all specifications"/>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/mainActivityTechnicsButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:orientation="vertical">
+            android:text="technics"
+            android:textSize="25sp"
+            android:height="60dp"
+            android:width="300dp"
+            android:backgroundTint="@color/secondaryColor"/>
 
-            <ImageButton
-                android:id="@+id/mainActivitySecondAdImageButton"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/second_advertisement_thumbnail"/>
+        <Button
+            android:id="@+id/mainActivityPhonesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phones"
+            android:textSize="25sp"
+            android:height="60dp"
+            android:width="300dp"
+            android:backgroundTint="@color/secondaryColor"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="iPhone 12 Pro Max"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:gravity="center"/>
+        <Button
+            android:id="@+id/mainActivityMusicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="music"
+            android:textSize="25sp"
+            android:height="60dp"
+            android:width="300dp"
+            android:backgroundTint="@color/secondaryColor"/>
 
-            <Button
-                android:id="@+id/mainActivitySecondAdButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/secondaryColor"
-                android:text="All Specifications" />
+        <Button
+            android:id="@+id/mainActivityGamingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gaming pcs"
+            android:textSize="25sp"
+            android:height="60dp"
+            android:width="300dp"
+            android:backgroundTint="@color/secondaryColor"/>
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Button
+            android:id="@+id/mainActivityOtherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="other"
+            android:textSize="25sp"
+            android:height="60dp"
+            android:width="300dp"
+            android:backgroundTint="@color/secondaryColor"/>
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

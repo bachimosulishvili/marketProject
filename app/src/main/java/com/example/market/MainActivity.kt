@@ -3,8 +3,13 @@ package com.example.market
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
+import com.example.market.gaming.CatGamingPcsActivity
+import com.example.market.music.CatMusicActivity
+import com.example.market.others.CatOthersActivity
+import com.example.market.phones.CatPhonesActivity
+import com.example.market.profile.MyProfileActivity
+import com.example.market.technics.CatTechnicActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -16,14 +21,64 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         init()
         }
+
     private fun init(){
         logIn()
-        firstAd()
-        secondAd()
         profile()
         onStart()
         signOut()
+        technics()
+        music()
+        phones()
+        gaming()
+        other()
     }
+    private fun technics(){
+        val intentTech = Intent(this, CatTechnicActivity::class.java)
+        mainActivityTechnicsButton.setOnClickListener(){
+            startActivity(intentTech)
+        }
+
+    }
+
+    private fun music(){
+        val intentMusic = Intent(this, CatMusicActivity::class.java)
+        mainActivityMusicButton.setOnClickListener(){
+            startActivity(intentMusic)
+        }
+
+    }
+
+    private fun phones(){
+        val intentPhones = Intent(this, CatPhonesActivity::class.java)
+        mainActivityPhonesButton.setOnClickListener(){
+            startActivity(intentPhones)
+        }
+
+    }
+
+    private fun gaming(){
+        val intentGaming = Intent(this, CatGamingPcsActivity::class.java)
+        mainActivityGamingButton.setOnClickListener(){
+            startActivity(intentGaming)
+        }
+
+    }
+
+    private fun other(){
+        val intentOther = Intent(this, CatOthersActivity::class.java)
+        mainActivityOtherButton.setOnClickListener(){
+            startActivity(intentOther)
+        }
+
+    }
+
+
+
+
+
+
+
 
     private fun logIn(){
         val intent0 = Intent(this, LogInActivity::class.java)
@@ -32,26 +87,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun firstAd(){
-        val intent1 = Intent(this, MacbookActivity::class.java)
-        mainActivityFirstAdButton.setOnClickListener() {
-         startActivity(intent1)
-     }
-        mainActivityFirstAdImageButton.setOnClickListener(){
-            startActivity(intent1)
-        }
-    }
 
-    private fun secondAd() {
-        val intent2 = Intent(this, IphoneActivity::class.java)
-
-        mainActivitySecondAdButton.setOnClickListener(){
-            startActivity(intent2)
-        }
-        mainActivitySecondAdImageButton.setOnClickListener() {
-            startActivity(intent2)
-        }
-    }
 
     private fun profile(){
         val intent3 = Intent(this, MyProfileActivity::class.java)

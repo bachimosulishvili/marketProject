@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".IphoneActivity">
+    android:background="@color/backgroundColor"
+    tools:context=".technics.TechnicFirstAd">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="iPhone 12 pro max"
+            android:text="HP Laptop"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="40sp"
@@ -33,14 +34,15 @@
         android:layout_marginEnd="15dp">
 
         <ImageView
+            android:id="@+id/profileFirstThumbnail"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/second_advertisement_thumbnail"/>
+            android:layout_height="200dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="iPhone 12 Pro Max"
+            android:text="HP Laptop"
+            android:textColor="@color/secondaryColor"
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -53,7 +55,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4700 GEL"
+                android:text="3700 GEL"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/holo_red_dark"
@@ -69,6 +71,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:text="Brand"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -78,7 +81,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -86,7 +89,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="Apple"
+                    android:text="HP"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -102,6 +106,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:text="Release Date"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -111,7 +116,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -120,6 +125,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:text="2020"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -135,6 +141,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:text="OS"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -144,7 +151,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -152,7 +159,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="iOS"
+                    android:text="Windows 10 Pro"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -167,7 +175,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="Memory"
+                    android:text="SSD"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -177,7 +186,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -186,6 +195,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:text="256 GB"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -200,7 +210,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="5G"
+                    android:text="HDD"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -210,7 +221,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -218,7 +229,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text="Yes"
+                    android:text="-"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -234,6 +246,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:text="Screen Size"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -243,7 +256,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/secondaryColor"
                     android:textStyle="bold"
                     android:text=":"/>
 
@@ -251,7 +264,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:text='6.7"'
+                    android:text='15.6"'
+                    android:textColor="@color/secondaryColor"
                     android:textSize="25sp"
                     android:gravity="center"
                     />
@@ -261,7 +275,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Call: 555 *** ***"
+                android:text="Call: 599 *** ***"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/holo_red_dark"

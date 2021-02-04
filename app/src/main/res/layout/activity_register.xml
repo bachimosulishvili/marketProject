@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/backgroundColor"
     tools:context=".RegisterActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -43,6 +44,8 @@
                 android:text="Please fill all fields below"
                 android:textSize="20sp"
                 android:layout_gravity="center"
+                android:textColor="@color/secondaryColor"
+                android:textStyle="bold"
                 android:layout_marginBottom="30dp"/>
 
             <EditText
@@ -52,6 +55,8 @@
                 android:gravity="center"
                 android:hint="First Name"
                 android:lines="1"
+                android:textColorHint="@color/secondaryColor"
+                android:textColor="@color/secondaryColor"
                 android:singleLine="true"/>
 
             <EditText
@@ -61,6 +66,8 @@
                 android:gravity="center"
                 android:hint="Last Name"
                 android:lines="1"
+                android:textColorHint="@color/secondaryColor"
+                android:textColor="@color/secondaryColor"
                 android:singleLine="true"/>
 
             <EditText
@@ -70,6 +77,8 @@
                 android:gravity="center"
                 android:hint="Email"
                 android:lines="1"
+                android:textColorHint="@color/secondaryColor"
+                android:textColor="@color/secondaryColor"
                 android:singleLine="true"/>
 
             <EditText
@@ -80,6 +89,8 @@
                 android:password="true"
                 android:hint="Password"
                 android:lines="1"
+                android:textColorHint="@color/secondaryColor"
+                android:textColor="@color/secondaryColor"
                 android:singleLine="true"/>
 
             <EditText
@@ -90,6 +101,8 @@
                 android:password="true"
                 android:hint="Repeat Password"
                 android:lines="1"
+                android:textColorHint="@color/secondaryColor"
+                android:textColor="@color/secondaryColor"
                 android:singleLine="true"/>
 
             <Button

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.market">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Market">
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".IphoneActivity" />
-        <activity android:name=".MacbookActivity" />
-        <activity android:name=".MyProfileActivity" />
+        <activity android:name=".profile.ProfileSecondAd"></activity>
+        <activity android:name=".profile.ProfileFirstAd" />
+        <activity android:name=".gaming.GamingSecondAd" />
+        <activity android:name=".gaming.GamingFirstAd" />
+        <activity android:name=".music.MusicFirstAd" />
+        <activity android:name=".others.OthersSecondAd" />
+        <activity android:name=".others.OthersFirstAd" />
+        <activity android:name=".phones.PhonesSecondAd" />
+        <activity android:name=".phones.PhonesFirstAd" />
+        <activity android:name=".technics.TechnicSecondAd" />
+        <activity android:name=".technics.TechnicFirstAd" />
+        <activity android:name=".phones.CatPhonesActivity" />
+        <activity android:name=".gaming.CatGamingPcsActivity" />
+        <activity android:name=".music.CatMusicActivity" />
+        <activity android:name=".others.CatOthersActivity" />
+        <activity android:name=".technics.CatTechnicActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".profile.MyProfileActivity" />
         <activity android:name=".LogInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

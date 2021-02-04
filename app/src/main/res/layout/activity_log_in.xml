@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/backgroundColor"
     tools:context=".LogInActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -47,7 +48,8 @@
                 android:lines="1"
                 android:singleLine="true"
                 android:gravity="center"
-                android:outlineAmbientShadowColor="@color/black"/>
+                android:textColorHint="@color/secondaryColor"
+                android:outlineAmbientShadowColor="@color/secondaryColor"/>
 
             <EditText
                 android:id="@+id/logInLayoutPasswordEditText"
@@ -58,6 +60,8 @@
                 android:singleLine="true"
                 android:password="true"
                 android:gravity="center"
+                android:textColorHint="@color/secondaryColor"
+                android:textColor="@color/secondaryColor"
                 android:outlineAmbientShadowColor="@color/black"/>
 
             <Button
@@ -72,6 +76,7 @@
                 android:layout_height="50sp"
                 android:layout_marginTop="20dp"
                 android:text="Not A Member?"
+                android:textColor="@color/secondaryColor"
                 android:gravity="center"/>
 
             <Button
